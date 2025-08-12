@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop — Gen X Toybox</title>
+  <meta name="description" content="Shop retro classics, modern learning toys, and collectibles. Filter by age, brand, price, and educational focus." />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span class="logo"></span><strong>Gen X Toybox</strong></a>
+      <nav class="nav">
+        <a href="/shop.html" aria-current="page">Shop</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/wishlist.html">Wishlist</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn badge" data-role="wishlist-count" href="/wishlist.html" aria-label="Wishlist">❤</a>
+        <a class="icon-btn badge" data-role="cart-count" href="/cart.html" aria-label="Cart">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid grid-2">
+      <aside class="filters">
+        <h2 style="margin:0 0 10px">Filters</h2>
+        <div class="filter-row" style="margin-bottom:10px">
+          <label>
+            <span>Age</span>
+            <select id="filter-age"></select>
+          </label>
+          <label>
+            <span>Type</span>
+            <select id="filter-type"></select>
+          </label>
+          <label>
+            <span>Brand</span>
+            <select id="filter-brand"></select>
+          </label>
+          <label>
+            <span>Focus</span>
+            <select id="filter-focus"></select>
+          </label>
+        </div>
+        <div class="filter-row">
+          <label>
+            <span>Max Price</span>
+            <input id="filter-price" type="range" min="0" max="200" step="5" />
+          </label>
+          <div>
+            <span id="price-out" class="badge">$0–$200</span>
+          </div>
+        </div>
+      </aside>
+
+      <section>
+        <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px;flex-wrap:wrap;">
+          <h1 style="margin:0">Shop</h1>
+          <input id="search" class="select" type="text" placeholder="Search products" />
+        </header>
+        <div id="product-grid" class="product-grid" aria-live="polite"></div>
+      </section>
+    </div>
+  </main>
+
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/shop.js"></script>
+</body>
+</html>

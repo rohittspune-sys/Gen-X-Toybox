@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wishlist — Gen X Toybox</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span class="logo"></span><strong>Gen X Toybox</strong></a>
+      <nav class="nav">
+        <a href="/shop.html">Shop</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/wishlist.html" aria-current="page">Wishlist</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn badge" data-role="wishlist-count" href="/wishlist.html" aria-label="Wishlist">❤</a>
+        <a class="icon-btn badge" data-role="cart-count" href="/cart.html" aria-label="Cart">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Wishlist</h1>
+      <div id="wishlist-grid" class="product-grid"></div>
+    </div>
+  </main>
+
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/wishlist.js"></script>
+</body>
+</html>

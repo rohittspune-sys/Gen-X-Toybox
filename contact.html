@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Gen X Toybox</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="/"><span class="logo"></span><strong>Gen X Toybox</strong></a>
+      <nav class="nav">
+        <a href="/shop.html">Shop</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/wishlist.html">Wishlist</a>
+        <a href="/contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-btn badge" data-role="wishlist-count" href="/wishlist.html" aria-label="Wishlist">❤</a>
+        <a class="icon-btn badge" data-role="cart-count" href="/cart.html" aria-label="Cart">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid grid-2">
+      <section>
+        <h1>Contact Us</h1>
+        <p class="lead">We are here to help via email or live chat. Send us a message and we’ll get back within 1 business day.</p>
+        <form id="contact-form" class="grid" style="grid-template-columns:1fr 1fr">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <input type="text" name="subject" placeholder="Subject" style="grid-column:1/-1" />
+          <textarea name="message" rows="6" placeholder="Message" style="grid-column:1/-1" required></textarea>
+          <button class="btn btn-primary" type="submit" style="grid-column:1/-1">Send Message</button>
+        </form>
+      </section>
+      <aside class="filters">
+        <h2>Support</h2>
+        <p><strong>Email:</strong> support@genxtoybox.com</p>
+        <p><strong>Chat:</strong> Mon–Fri 9am–6pm</p>
+        <p><strong>FAQ:</strong> Coming soon</p>
+      </aside>
+    </div>
+  </main>
+
+  <script type="module" src="/js/app.js"></script>
+  <script type="module" src="/js/contact.js"></script>
+</body>
+</html>
